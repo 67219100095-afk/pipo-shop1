@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<script type="text/javascript">
+function MM_swapImgRestore() { 
+  var i,x,a=document.MM_sr; 
+  for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) 
+    x.src=x.oSrc;
+}
+
+function MM_preloadImages() { 
+  var d=document; 
+  if(d.images){ 
+    if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; 
+    for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ 
+      d.MM_p[j]=new Image; 
+      d.MM_p[j++].src=a[i];
+    }
+  }
+}
+
+function MM_findObj(n, d) { 
+  var p,i,x;  
+  if(!d) d=document; 
+  if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; 
+    n=n.substring(0,p);
+  }
+  if(!(x=d[n])&&d.all) x=d.all[n]; 
+  for (i=0;!x&&i<d.forms.length;i++) 
+    x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) 
+    x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) 
+    x=d.getElementById(n); 
+  return x;
+}
+
+function MM_swapImage() { 
+  var i,j=0,x,a=MM_swapImage.arguments; 
+  document.MM_sr=new Array; 
+  for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){
+     document.MM_sr[j++]=x; 
+     if(!x.oSrc) x.oSrc=x.src; 
+     x.src=a[i+2];
+   }
+}
+
+/* เพิ่มฟังก์ชันสั่งซื้อ */
+function orderProduct(button){
+    alert("สั่งซื้อแล้ว");
+    button.innerHTML = "สั่งซื้อแล้ว";
+    button.disabled = true;
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('รูปBODY MASK (1).png','รูปREVIEWS (3).png','รูปPROMO (1).png','รูปSETS (1).png','รูปREVIEWS (1).png','รูปBODY MASK (3).png','รูปOEDER (1).png','รูปTRACK (1).png','รูปHOW TO (1).png')">
+
+<table width="200" border="1">
+  <tbody>
+    <tr>
+      <td><img src="Green Bohemian Coming Soon Twitter Header (1400 x 200 px).png" width="1400" height="200" alt=""/></td>
+    </tr>
+  </tbody>
+</table>
+
+<table width="200" border="1">
+  <tbody>
+    <tr>
+      <td>&nbsp;<a href="home.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','รูปHOME (1).png',1)"><img src="รูปHOME.png" alt="" width="120" height="118" id="Image2"></a></td>
+      <td>&nbsp;<a href="#"><img src="รูปproduct.png" alt="" width="120" height="118"></a></td>
+      <td>&nbsp;<a href="body mask.html"><img src="รูปBODY MASK.png" alt="" width="120" height="118"></a></td>
+      <td>&nbsp;<a href="body care.html"><img src="รูปBODY MASK (2).png" alt="" width="120" height="118"></a></td>
+      <td>&nbsp;<a href="best.html"><img src="รูปREVIEWS (2).png" alt="" width="120" height="118"></a></td>
+      <td>&nbsp;<a href="promo.html"><img src="รูปPROMO.png" alt="" width="120" height="121"></a></td>
+      <td>&nbsp;<a href="sete.html"><img src="รูปSETS.png" alt="" width="120" height="118"></a></td>
+      <td>&nbsp;<a href="reviews.html"><img src="รูปREVIEWS.png" alt="" width="120" height="121"></a></td>
+      <td>&nbsp;<a href="how to.html"><img src="รูปHOW TO.png" alt="" width="120" height="118"></a></td>
+      <td>&nbsp;<a href="order.html"><img src="รูปOEDER.png" alt="" width="120" height="118"></a></td>
+      <td>&nbsp;<a href="track.html"><img src="รูปTRACK.png" alt="" width="120" height="118"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2 align="center">PRODUCTS</h2>
+
+<table width="800" border="1" align="center" cellpadding="20">
+
+<tr align="center">
+<td>
+<img src="bd675ea061bf5d48.jpg" width="200" height="200"><br><br>
+<b>ครีมพอกผิว</b><br>
+ราคา 199 บาท<br><br>
+
+เลือกสูตร :
+<select>
+<option>สูตรนมสด</option>
+<option>สูตรแครอท</option>
+<option>สูตรมะเขือเทศ</option>
+</select>
+<br><br>
+
+<button onclick="orderProduct(this)">สั่งซื้อ</button>
+</td>
+
+<td>
+<img src="6ce12afc08f75336.jpg" width="200" height="200"><br><br>
+<b>ครีมทาผิว</b><br>
+ราคา 159 บาท<br><br>
+
+เลือกสูตร :
+<select>
+<option>สูตรนมสด</option>
+<option>สูตรอโล่เวร่า</option>
+<option>สูตรวิตมินซี</option>
+</select>
+<br><br>
+
+<button onclick="orderProduct(this)">สั่งซื้อ</button>
+</td>
+</tr>
+
+<tr align="center">
+<td>
+<img src="bd017bf5f67eb47e6b165699ecbc4b4c.jpg" width="200" height="200"><br><br>
+<b>สครับผิว</b><br>
+ราคา 179 บาท<br><br>
+
+เลือกสูตร :
+<select>
+<option>สูตรกาแฟ</option>
+<option>สูตรนม</option>
+<option>สูตรสมุนไพร</option>
+</select>
+<br><br>
+
+<button onclick="orderProduct(this)">สั่งซื้อ</button>
+</td>
+
+<td>
+<img src="8a89b2531295469493af5fc4ef5a8c0f~tplv-sdweummd6v-text-logo-v1_QHN1a2hzbWF5Ng==_q75.jpeg" width="200" height="200"><br><br>
+<b>สบู่ผิวขาว</b><br>
+ราคา 99 บาท<br><br>
+
+เลือกสูตร :
+<select>
+<option>สูตรมะขาม</option>
+<option>สูตรนมแพะ</option>
+<option>สูตรวิตามินซี</option>
+</select>
+<br><br>
+
+<button onclick="orderProduct(this)">สั่งซื้อ</button>
+</td>
+</tr>
+<hr>
+
+<h2 align="center">โปรโมชั่นพิเศษ</h2>
+
+<table width="800" border="1" align="center" cellpadding="20">
+
+<tr align="center">
+<td>
+<b>โปรที่ 1 : ซื้อครีมพอกผิว แถมสครับผิว</b><br><br>
+จากปกติ 378 บาท<br>
+เหลือเพียง 349 บาท<br><br>
+<button onclick="orderProduct(this)">สั่งซื้อโปรโมชั่นนี้</button>
+</td>
+</tr>
+
+<tr align="center">
+<td>
+<b>โปรที่ 2 : สบู่ผิวขาว ซื้อ 2 ก้อน ราคาพิเศษ</b><br><br>
+จากปกติ 198 บาท<br>
+เหลือเพียง 179 บาท<br><br>
+<button onclick="orderProduct(this)">สั่งซื้อโปรโมชั่นนี้</button>
+</td>
+</tr>
+
+<tr align="center">
+<td>
+<b>โปรที่ 3 : ครีมทาผิว ลดพิเศษ</b><br><br>
+จากปกติ 159 บาท<br>
+เหลือเพียง 139 บาท<br><br>
+<button onclick="orderProduct(this)">สั่งซื้อโปรโมชั่นนี้</button>
+</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2 align="center">จัดเซ็ตสุดคุ้ม</h2>
+
+<table width="800" border="1" align="center" cellpadding="20">
+
+<tr align="center">
+<td>
+<b>เซ็ตผิวใสยอดนิยม</b><br><br>
+- ครีมพอกผิว<br>
+- สครับผิว<br><br>
+ราคาปกติ 378 บาท<br>
+เหลือเพียง 329 บาท<br><br>
+<button onclick="orderProduct(this)">สั่งซื้อเซ็ตนี้</button>
+</td>
+</tr>
+
+<tr align="center">
+<td>
+<b>เซ็ตผิวขาวครบสูตร</b><br><br>
+- ครีมทาผิว<br>
+- สบู่ผิวขาว<br><br>
+ราคาปกติ 258 บาท<br>
+เหลือเพียง 219 บาท<br><br>
+<button onclick="orderProduct(this)">สั่งซื้อเซ็ตนี้</button>
+</td>
+</tr>
+
+<tr align="center">
+<td>
+<b>เซ็ตครบจบในชุดเดียว</b><br><br>
+- ครีมพอกผิว<br>
+- ครีมทาผิว<br>
+- สครับผิว<br>
+- สบู่ผิวขาว<br><br>
+ราคาปกติ 636 บาท<br>
+เหลือเพียง 559 บาท<br><br>
+<button onclick="orderProduct(this)">สั่งซื้อเซ็ตนี้</button>
+</td>
+</tr>
+
+</table>
+
+</table>
+
+</body>
+</html>

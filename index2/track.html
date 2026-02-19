@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ติดตามการสั่งซื้อ</title>
+
+<script type="text/javascript">
+function MM_swapImgRestore() { 
+  var i,x,a=document.MM_sr; 
+  for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) 
+    x.src=x.oSrc;
+}
+
+function MM_preloadImages() { 
+  var d=document; 
+  if(d.images){ 
+    if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; 
+    for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ 
+      d.MM_p[j]=new Image; 
+      d.MM_p[j++].src=a[i];
+    }
+  }
+}
+
+function MM_findObj(n, d) { 
+  var p,i,x;  
+  if(!d) d=document; 
+  if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; 
+    n=n.substring(0,p);
+  }
+  if(!(x=d[n])&&d.all) x=d.all[n]; 
+  for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) 
+    x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); 
+  return x;
+}
+
+function MM_swapImage() { 
+  var i,j=0,x,a=MM_swapImage.arguments; 
+  document.MM_sr=new Array; 
+  for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){
+     document.MM_sr[j++]=x; 
+     if(!x.oSrc) x.oSrc=x.src; 
+     x.src=a[i+2];
+   }
+}
+
+function checkStatus() {
+    var orderId = document.getElementById("orderId").value;
+    
+    if(orderId == "") {
+        alert("กรุณากรอกหมายเลขคำสั่งซื้อ");
+        return;
+    }
+
+    var status;
+
+   if(orderId == "1001") {
+    status = "กำลังจัดส่ง";
+} 
+else if(orderId == "1002") {
+    status = "กำลังจัดส่ง";
+} 
+else if(orderId == "1003") {
+    status = "กำลังจัดส่ง";
+} 
+else {
+    status = "กำลังจัดส่ง";
+}
+
+    document.getElementById("result").innerHTML = "สถานะคำสั่งซื้อ: " + status;
+}
+</script>
+
+</head>
+
+<body onLoad="MM_preloadImages('รูปBODY MASK (1).png','รูปREVIEWS (3).png','รูปPROMO (1).png','รูปSETS (1).png','รูปREVIEWS (1).png','รูปBODY MASK (3).png','รูปOEDER (1).png','รูปTRACK (1).png','รูปHOW TO (1).png')">
+
+<center>
+
+<table border="1">
+<tr>
+<td>
+<img src="Green Bohemian Coming Soon Twitter Header (1400 x 200 px).png" width="1400" height="200">
+</td>
+</tr>
+</table>
+
+<br>
+
+<table border="1">
+<tr>
+<td><a href="home.html"><img src="รูปHOME.png" width="120" height="118"></a></td>
+<td><a href="#"><img src="รูปproduct.png" width="120" height="118"></a></td>
+<td><a href="body mask.html"><img src="รูปBODY MASK.png" width="120" height="118"></a></td>
+<td><a href="body care.html"><img src="รูปBODY MASK (2).png" width="120" height="118"></a></td>
+<td><a href="best.html"><img src="รูปREVIEWS (2).png" width="120" height="118"></a></td>
+<td><a href="promo.html"><img src="รูปPROMO.png" width="120" height="121"></a></td>
+<td><a href="sete.html"><img src="รูปSETS.png" width="120" height="118"></a></td>
+<td><a href="reviews.html"><img src="รูปREVIEWS.png" width="120" height="121"></a></td>
+<td><a href="how to.html"><img src="รูปHOW TO.png" width="120" height="118"></a></td>
+<td><a href="order.html"><img src="รูปOEDER.png" width="120" height="118"></a></td>
+<td><a href="track.html"><img src="รูปTRACK.png" width="120" height="118"></a></td>
+</tr>
+</table>
+
+<br><br>
+
+<h2>ติดตามการสั่งซื้อ</h2>
+
+<table border="1" width="600" cellpadding="20">
+<tr align="center">
+<td>
+
+กรอกหมายเลขคำสั่งซื้อ<br><br>
+
+<input type="text" id="orderId" placeholder="เช่น 1001"><br><br>
+
+<button onclick="checkStatus()">ตรวจสอบสถานะ</button>
+
+<br><br>
+
+<p id="result"></p>
+
+</td>
+</tr>
+</table>
+
+</center>
+
+</body>
+</html>
